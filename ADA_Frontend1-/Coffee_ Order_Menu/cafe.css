@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=DynaPuff&family=Raleway:wght@400;800&display=swap');
+body{
+    background-image: url(https://static.toiimg.com/photo/84855613.cms);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+h1{
+    color: #663613;
+    margin-top: -75px;
+    font-family:Bokor;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+p{
+    color:#9e521b;
+    font-family: Dancing Script;
+    line-height: 0px;
+    font-size: 16px;
+}
+img{
+    margin-left: -262px;
+    margin-top: 20px;
+    
+}
+
+h3{
+    font-family: Bokor;
+    
+
+}
+.container{
+    border: 0px solid;
+    border-radius: 30px;
+    background-image: url(https://image.shutterstock.com/image-vector/cafe-icon-logo-design-vector-260nw-1023845536.jpg);
+    background-repeat:no-repeat;
+    background-size: cover; 
+    opacity: 0.8;
+    box-shadow: 13px 15px #a5704b;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.container :hover{
+    opacity: 0.9;
+    text-shadow: 2px 2px #d4954d;
+}
+.top{
+    text-align: center;
+    border-bottom-color: coral;
+    border-bottom-style: dashed;
+    border-bottom-width: thin;
+}
+#motto{
+    margin-top:-20px;
+}
+h3{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-bottom: -8px;
+    /* margin-top: 10px; */
+
+}
+.list h4 {
+    display: inline-block;
+    font-family: Dynapuff;
+    letter-spacing: 2px;
+    line-height: 0px;
+}
+  
+.right {
+    text-align: left;
+    margin-left: 45px;
+}
+  
+.left {
+    float: right;
+   width: 35%;
+}
+
