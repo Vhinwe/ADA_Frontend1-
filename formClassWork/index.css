@@ -13,7 +13,7 @@ h1 {
     text-align: center;
 }
   
-form {
+.formWrap {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -48,8 +48,9 @@ input, textarea {
     border: 1px solid white;
     margin-left: 2.5rem;
     color: aliceblue;
+    text-transform: capitalize;
 }
-p{
+legend{
     text-align: initial;
     margin-top: -15px;
     margin-left: 2.5rem;
