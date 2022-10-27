@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="icon" type="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png">
+</head>  
+  <body>
+    
+    <div class="formWrap">
+      <h1>Customer Feedback Form</h1>
+      
+     <form 
+       action="/."
+       autocomplete="on"
+       novalidate="off"
+       target="_blank"
+       method="get"
+       enctype="multipart/form-data"
+       >
+       <fieldset>
+        <legend><strong>Account Details</strong></legend>
+         <label for="fname"><strong>Username</strong></label> 
+         <input type="text"id="fname" placeholder="Username" name="first-name" autofocus />
+         <label for="pword"><strong>Password</strong></label> 
+         <input type="password"id="pword" placeholder="Password" size="8" name="password"  required />
+         <label for="phone"><strong>Phone Number</strong></label> 
+         <input type="tel" id="phone" placeholder="Phone Number" name="phone-no" disabled />
+       </fieldset>
+       <hr>
+ 
+        <div class="grid">
+         
+          <fieldset>
+            <legend><strong>Personal Details</strong></legend>
+            <label>Gender</label>
+            <label for="fmale"><input id="fmale" type="radio" name="female" class="inline" /> Female</label>
+            <label for="mel"><input id="mel" type="radio" name="male" class="inline" /> Male</label>
+          </fieldset>
+                  
+          <fieldset>
+            <label >Subscription Packages</label>  
+            <label for="premium" name="prem">
+            <input id="premium" type="checkbox" required name="prem" class="inline" />Premium</label>
+            <label for="silver" name="sil">
+            <input id="silver" type="checkbox" required name="sil" class="inline" />Silver</label>
+            <label for="bronze" name="brz">
+            <input id="bronze" type="checkbox" required name="brz" class="inline" />Bronze</label>
+          </fieldset>
+
+          <div class="birthdate">
+             <label>Date Of Birth:</label>
+            <div class="bdate-block">
+              <select class="day" required>
+                <option value=""></option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                
+              </select>
+              <select class="month" required>
+                <option value=""></option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="December">December</option>
+              </select>
+                           
+            </div>
+            <br>
+          </div> 
+            <hr>
+          <fieldset>
+             <legend><strong>Overall Experience With Our Service</strong></legend>
+            <table>
+             <tr>
+              <th class="first-col"></th>
+              <th>Very Good</th>
+              <th>Good</th>
+              <th>Fair</th>
+              <th>Poor</th>
+              <th>Very Poor</th>
+             </tr>
+          
+             <tr>
+              <td class="first-col">How satisfied are you with the comprehensiveness of our offer?</td>
+              <td><input type="radio" value="none" name="satisfied" /></td>
+              <td><input type="radio" value="none" name="satisfied" /></td>
+              <td><input type="radio" value="none" name="satisfied" /></td>
+              <td><input type="radio" value="none" name="satisfied" /></td>
+              <td><input type="radio" value="none" name="satisfied" /></td>
+             </tr>
+             <tr>
+              <td class="first-col">How would you rate our prices?</td>
+              <td><input type="radio" value="none" name="prices" /></td>
+              <td><input type="radio" value="none" name="prices" /></td>
+              <td><input type="radio" value="none" name="prices" /></td>
+              <td><input type="radio" value="none" name="prices" /></td>
+              <td><input type="radio" value="none" name="prices" /></td>
+             </tr>
+       
+            </table><hr>
+           <h4>What should we change in order to live up to your expectations?</h4>
+           <textarea class="area" rows="4" cols="15"></textarea>
+           <label>  
+            Would you like to visit the office(pick a date and time)<br>>  
+            Select date & time: <input type="datetime-local" name="meetingdate"> <br>  
+           </label>  
+           <h4>Subscription Start and End Date:</h4><br>  
+           <input type="date" name="Startdate"><br>  
+           <input type="date" name="Enddate"><br>        
+           <h4>Kindly upload your passport</h4>
+           <label>Select file to upload:</label>  
+           <input type="file" name="newfile">  
+           <div class="btn-block">
+           <button type="submit" href="/">Send Feedback</button>
+           <input type="reset" id="reset" value="Reset">  
+          </fieldset> 
+        </div>
+             
+       
+     
+         
+       </div>
+      </div>
+    </form>
+   
+  </body>  
+</html>

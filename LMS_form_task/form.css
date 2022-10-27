@@ -1,0 +1,123 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #dadaec;
+  color:#bebed6 ;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 1rem auto;
+  text-align: center;
+  color: white;
+}
+h4{
+  padding: 0 2.5rem;
+}
+
+.formWrap {
+  width: 100vw;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color:#0a0a23;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  
+}
+hr{
+ border: 1px dashed #d7d7e9; 
+}
+label {
+  display: block;
+  margin: 0.5rem 2.5rem;
+  color: white ;
+}
+.bdate-block {
+  display: flex;
+  justify-content:space-evenly
+}
+.birthdate select.day {
+  width: 65px;
+}
+.birthdate select.month {
+  width: calc(60% - 74px);
+}
+.birthdate input {
+  width: 38px;
+  vertical-align: unset;
+}
+input, textarea {
+  margin: 5px 0 0 0;
+  width: 80%;
+  min-height: 2em;
+  background-color: #a1cee9;;
+  border: 1px solid white;
+  margin-left: 2.5rem;
+  color: rgb(7, 10, 12);
+  text-transform: capitalize;
+}
+input:hover, textarea:hover {
+  outline: none;
+  border: 1px solid #095484;
+  }
+legend{
+  text-align: initial;
+  margin-top: -15px;
+  margin-left: 2.5rem;
+  color: white;
+}
+.inline {
+  cursor: pointer;
+  width:unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  color: #0a0a23;
+}
+th, td {
+  width: 15%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align: unset;
+  line-height: 18px;
+  font-weight: 400;
+  word-break: break-all;
+}
+.first-col {
+  width: 26%;
+  text-align: left;
+  padding: 1px;
+}
+table {
+  width: 86%;
+}
+.area {
+  width: calc(70% - 6px);
+}
+.btn-block {
+  margin-top: 20px;
+  text-align: center;
+}
+button, #reset{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  border-radius: 5px; 
+  background-color: #095484;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0666a3;
+}
+  
