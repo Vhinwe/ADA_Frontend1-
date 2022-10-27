@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+</head>  
+  <body>
+    <form 
+      action="/."
+      autocomplete="on"
+      novalidate="off"
+      target="_blank"
+      method="get"
+     >
+        <h1>SIGN UP</h1>
+        <div class="icon">
+            <i class="fa fa-user-circle-o"></i>
+        </div>
+          <fieldset>
+           <label for="fname"><strong>Fullname</strong></label> 
+           <input type="text"id="fname" placeholder="Fullname" name="first-name"  required />
+           <label for="pword"><strong>Password</strong></label> 
+           <input type="password"id="pword" placeholder="Password" name="password"  required />
+           <label for="phone"><strong>Phone Number</strong></label> 
+           <input type="tel" id="phone" placeholder="Phone Number" name="phone-no"  required />
+          </fieldset>
+        
+        <fieldset>
+            <p><strong>Gender</strong></p>
+            <label for="fmale"><input id="fmale" type="radio" name="female" class="inline" /> Female</label>
+            <label for="mel"><input id="mel" type="radio" name="male" class="inline" /> Male</label>
+            <label for="odas"><input id="odas" type="radio" name="oders" class="inline" /> Others</label>
+        </fieldset>
+        <fieldset>
+            <p><strong>Hobbies</strong></p>
+            <label for="reading" name="read">
+            <input id="reading" type="checkbox" required name="read" class="inline" />Reading</label>
+            <label for="dancing" name="dance">
+            <input id="dancing" type="checkbox" required name="dance" class="inline" />Dancing</label>
+            <label for="writing" name="write">
+            <input id="writing" type="checkbox" required name="write" class="inline" />Writing</label>
+            <label for="eating" name="eat">
+            <input id="eating" type="checkbox" required name="eat" class="inline" />Eating</label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+
+      </form>
+   
+  </body>  
+</html>

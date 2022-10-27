@@ -1,0 +1,83 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color:#0a0a23 ;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+  
+h1 {
+    margin: 1em auto;
+    text-align: center;
+}
+  
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-image:url(https://img.freepik.com/free-photo/maple-leaf-border-background-orange-watercolor-autumn-season_53876-128735.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+  
+fieldset:last-of-type {
+    border-bottom: none;
+}
+  
+label {
+    display: block;
+    margin: 0.5rem 2.5rem;
+    color:#0a0a23 ;
+}
+  
+input, textarea {
+    margin: 5px 0 0 0;
+    width: 80%;
+    min-height: 2em;
+    background-color: #0a0a23;
+    border: 1px solid white;
+    margin-left: 2.5rem;
+    color: aliceblue;
+}
+p{
+    text-align: initial;
+    margin-top: -15px;
+    margin-left: 2.5rem;
+    color: #0a0a23;
+}
+.inline {
+    cursor: pointer;
+    width:unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    color: #0a0a23;
+}
+.icon{
+    font-size: 50px;
+    margin-left: 13rem;
+    margin-top: -19px;
+}
+input[type="submit"] {
+    display: block;
+    color: white;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:#0a0a23 ;
+    min-width: 300px;
+    
+}
+input[type="submit"]:hover{
+   opacity:0.7;
+   cursor: pointer;
+}
