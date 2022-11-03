@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+body{
+   background-color: rgb(233, 220, 220);
+}
+h1{
+    font-family: fasthand;
+    font-size: 60px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+.card1{
+    background-color: rgb(173, 173, 173);
+    border: 2px solid black;
+    width: 75vh;
+    height: 30vw;
+    padding: 50px;
+    margin: 0 auto;
+   
+}
+.card2{
+    border: 5px dashed rgb(173,255,47);
+    background-color: white;
+    width: 70vh;
+    height: 28vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+span:hover{
+   color: #006400;
+   transition: 0.5s;
+}
+ul{ 
+   list-style: none; 
+   font-family: kanit;
+   font-size: 20px;
+  
+}
+ul li::before {
+     content:"\2022 \00A0"; 
+     color: rgb(0,100,0);
+     font-size: 30px;
+     line-height:1.5px ;
+     
+}
+footer{
+    text-align: center;
+    padding: 15px;
+}
