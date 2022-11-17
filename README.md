@@ -1,3 +1,3 @@
 # ADA_Frontend1-
 
-My first frontend engineering project on the ADA Project
+This repository is for the ADA Project frontend track
