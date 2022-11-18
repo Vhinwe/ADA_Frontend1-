@@ -1,25 +1,88 @@
 
-/* .card{
-    margin: 0 auto;
-    border: 4px solid red;
-    width: 25%;
-    height: 30vw;
+*html{
+    height: 100%;
+    box-sizing: border-box;
 }
-.circle{
-    width: 60px;
-    height: 60px;
-    
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: #f2eee3;
 }
-.circle > img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid green;
-    margin-left: 50% ;
-    margin-top: 10vw;
+p{
+  font-size: 15px;
+  text-align: center;
+  margin: 5px;
+  padding: 25px;  
+  font-weight: 900;
+}
 
-}
-.skew{
-    border: 2px solid palevioletred;
+.container {
+    position:relative;
+    margin: 0 auto;
+    width: 400px;
+    height: 450px;
+    padding: 40px;
+    border: #7b00e0 solid 3px;
+    background: linear-gradient(45deg, #7b00e0, #ae31d9);
     
-} */
+
+} 
+.wrapper{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    /*box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3); */
+    
+  }
+  .wrapper > img{
+    height: 80px;
+    width: 80px;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+
+    
+  } 
+  .wrapper img:hover{
+    transform: scale(1.2);
+  }
+ 
+.skew{
+    width: 100%;
+    height: 180px;
+    padding: 10px 10px;
+    font-size:  16px;
+    margin-bottom: 22px;
+    border: 1px solid rgb(27, 25, 26);
+    margin-top: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+          
+} 
+.skew:hover{
+    transform: skewY(5deg ); 
+    border-top: none; 
+    animation: circle 3s;
+ 
+   
+}
+@keyframes circle {
+    0%{skewY:(8deg); background-color: aqua; opacity:0.2 ;}
+    55%{skewY:8deg(10deg); background-color: blue; opacity: 0.4}
+    100%{skewY:(15deg); background-color: rgb(247, 0, 255);}
+}
+form{
+  margin-top: -100px ;
+}
+input{
+  margin-top: 10px;
+}
+.inner{
+  border: 2px solid black ;
+  height: 50%;
+  width: 180px;
+  margin: 0px auto 4px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
