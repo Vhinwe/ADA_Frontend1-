@@ -1,0 +1,51 @@
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+ }
+ 
+ 
+ /* .nav{
+   background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    position: fixed;
+}  */
+
+
+/* .nav .social{
+    padding: 1.4rem 0
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+} */
+
+/*  */
+/* 
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+} */
+
+/* .nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+} */
+
+/* .collapse{
+    height: 3rem;
+} */
+
+
+
+
