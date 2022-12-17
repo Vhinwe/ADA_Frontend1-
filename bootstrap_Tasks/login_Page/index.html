@@ -23,20 +23,20 @@
                 <div class="card-body h-100 bg-secondary bg-opacity-10 border border-0 ">
                   <h5 class="card-title text-center fs-1 mb-5">Welcome to MI6</h5>
                   <h6 class="card-subtitle mb-2 text-muted text-center fs-6">Are you ready to join the elite?</h6>
-                  <form class="p-5 mx-auto">
+                  <form class="p-5 mx-auto" name="loginForm">
                     <div class="mb-3 col-md-11">
                       <label for="Email" class="form-label text-secondary">Email address</label>
-                      <input  type="email" class="form-control border-0 border-bottom border-dark " id="Email" placeholder="johndoe@email.com">
+                      <input name="email" type="email" required class="form-control border-0 border-bottom border-dark " id="Email" placeholder="johndoe@email.com">
                       
                     </div>
 
                     <div class="mb-5 col-md-11">
                       <label for="Password1" class="form-label text-secondary">Password</label>
-                      <input type="password" class="form-control form-control border-0 border-bottom border-dark" id="Password1" aria-describedby="emailHelp" placeholder="*********">
+                      <input name="password" type="password" required minlength="6" maxlength="8"  class="form-control form-control border-0 border-bottom border-dark" id="Password1" aria-describedby="emailHelp" placeholder="********">
                       <div id="emailHelp" class="form-text text-end text-secondary">Forgot Password</div>
                     </div>
                     
-                    <button type="submit" class="btn btn-secondary disabled rounded-pill d-grid gap-0 col-4 mx-auto mb-5">Submit</button>
+                    <button id="submit-btn" type="submit" class="btn btn-primary rounded-pill d-grid gap-0 col-4 mx-auto mb-5">Submit</button>
                    <div class= "card-text mb-4" style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
                     <span class="fs-5 p-3 text-muted" style="background-color: #F3F5F6;">
                       or 
@@ -59,7 +59,7 @@
                   <!-- <div class="card-footer text-muted text-center">
                     &copy; MI6 &trade;MI6
                   </div> -->
-                   <img class="wave" src="data:image/jpeg;base64,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" alt="" >
+
                 </div>
               </div>
             </div>
@@ -67,5 +67,6 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
